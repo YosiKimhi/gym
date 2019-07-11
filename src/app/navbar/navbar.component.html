@@ -1,0 +1,16 @@
+<nav>
+  <div class="nav-wrapper">
+    <a routerLink="/" style="margin-left:10px;font-size:30px"> Wix Gym Club</a>
+    
+    <ul class="right">
+      <li><a routerLink="/">Home</a></li>
+      
+      <li><a  routerLink="/allclasses">View All Classes</a></li>
+      <li><a routerLink="/about">About Us</a></li>
+
+      <li *ngIf="!user"><a routerLink="/login">Hello Guest - click to Register<i class="material-icons right">face</i></a></li>
+      <li *ngIf="user"><a  routerLink="/profile">Hello {{user.name}}<i class="material-icons right">face</i></a></li>
+     
+    </ul>
+  </div>
+</nav>

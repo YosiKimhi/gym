@@ -1,0 +1,18 @@
+<div class="container">
+
+  <div class="headd"> 
+        
+      <img src="{{user.photoUrl}}"  class="circle responsive-img">
+
+      <h2>{{user.name}}</h2>
+      <h5>{{user.email}}</h5>
+      <a class="waves-effect waves-light btn red" (click)="signOut()">Sign Out</a>
+      <br><br>
+  </div>
+
+  <ul class="collection with-header">
+      <li class="collection-header"><h4>Your Classes</h4></li>
+      <li class="collection-item" *ngFor="let l of list;let i = index"><div>{{l.name}} - at {{l.day}} {{l.time}}<a  class="secondary-content"><i (click)="deleteUserFromClass(l,i)" class="material-icons">delete</i></a></div></li>
+    </ul>
+
+</div>

@@ -1,0 +1,12 @@
+.headd{
+
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+
+.collection-item:hover{
+
+    background-color: lightgray;
+}
